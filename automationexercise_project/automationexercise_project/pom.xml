@@ -1,0 +1,126 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.automationexercise</groupId>
+  <artifactId>automationexercise-tests</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+  <dependencies>
+    <!-- Selenium -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+<!--      <version>4.22.0</version>-->
+      <version>4.38.0</version>
+
+    </dependency>
+
+    <!-- TestNG -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.8.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- WebDriverManager to manage browser drivers automatically -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.5.3</version>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.1.2</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+
+  <repositories>
+    <repository>
+      <id>maven-central</id>
+      <name>Maven Central</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
+  </repositories>
+
+</project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<project>-->
+
+<!--  <dependencyManagement>-->
+<!--    <dependencies>-->
+<!--      <dependency>-->
+<!--        <groupId>com.google.guava</groupId>-->
+<!--        <artifactId>guava</artifactId>-->
+<!--        <version>32.1.2-jre</version>-->
+<!--      </dependency>-->
+<!--    </dependencies>-->
+<!--  </dependencyManagement>-->
+
+<!--  <dependencies>-->
+<!--    &lt;!&ndash; Selenium &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.seleniumhq.selenium</groupId>-->
+<!--      <artifactId>selenium-java</artifactId>-->
+<!--      <version>4.22.0</version>-->
+<!--    </dependency>-->
+
+<!--    &lt;!&ndash; TestNG &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.testng</groupId>-->
+<!--      <artifactId>testng</artifactId>-->
+<!--      <version>7.8.0</version>-->
+<!--      <scope>test</scope>-->
+<!--    </dependency>-->
+
+<!--    &lt;!&ndash; WebDriverManager &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>io.github.bonigarcia</groupId>-->
+<!--      <artifactId>webdrivermanager</artifactId>-->
+<!--      <version>5.5.3</version>-->
+<!--    </dependency>-->
+
+<!--    &lt;!&ndash; Force Guava version &ndash;&gt;-->
+<!--  <dependency>-->
+<!--    <groupId>org.seleniumhq.selenium</groupId>-->
+<!--    <artifactId>selenium-java</artifactId>-->
+<!--    <version>4.19.0</version>-->
+<!--  </dependency>-->
+<!--  </dependencies>-->
+<!--</project>-->
+

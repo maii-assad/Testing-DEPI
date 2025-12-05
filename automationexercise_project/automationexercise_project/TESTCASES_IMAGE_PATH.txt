@@ -1,0 +1,2 @@
+User-provided testcases image path:
+/mnt/data/1a697b3e-79c4-4819-8e92-dfac6bfc67e9.png
